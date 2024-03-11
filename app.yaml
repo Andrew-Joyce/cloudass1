@@ -1,0 +1,14 @@
+runtime: nodejs
+env: flex
+
+handlers:
+  - url: /
+    static_files: static/html/index.html
+    upload: static/html/index.html
+
+  - url: /css
+    static_dir: static/css
+
+  - url: /.*
+    script: auto
+
